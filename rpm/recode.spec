@@ -14,11 +14,8 @@ Release:    1
 Group:      Applications/File
 License:    GPLv2+
 URL:        http://recode.progiciels-bpi.ca/
-Source0:    http://recode.progiciels-bpi.ca/archives/recode-%{version}.tar.gz
+Source0:    http://recode.progiciels-bpi.ca/archives/%{name}-%{version}.tar.gz
 Source100:  recode.yaml
-Patch0:     recode.patch
-Patch1:     recode-3.6-getcwd.patch
-Patch2:     recode-bool-bitfield.patch
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 
@@ -48,13 +45,8 @@ are supported.
 %prep
 %setup -q -n %{name}-%{version}/%{name}
 
-# recode.patch
-%patch0 -p1
-# recode-3.6-getcwd.patch
-%patch1 -p1
-# recode-bool-bitfield.patch
-%patch2 -p1
 # >> setup
+./after-patch.sh
 # << setup
 
 %build

@@ -6,11 +6,7 @@ Group: Applications/File
 License: GPLv2+
 URL: http://recode.progiciels-bpi.ca/
 Sources:
-    - http://recode.progiciels-bpi.ca/archives/recode-%{version}.tar.gz
-Patches:
-    - recode.patch
-    - recode-3.6-getcwd.patch
-    - recode-bool-bitfield.patch
+    - http://recode.progiciels-bpi.ca/archives/%{name}-%{version}.tar.gz
 Description: |
     The `recode' converts files between character sets and usages.
     It recognises or produces nearly 150 different character sets
