@@ -13,8 +13,8 @@ Version:    3.6
 Release:    1
 Group:      Applications/File
 License:    GPLv2+
-URL:        http://recode.progiciels-bpi.ca/
-Source0:    http://recode.progiciels-bpi.ca/archives/%{name}-%{version}.tar.gz
+URL:        https://github.com/sailfishos/recode
+Source0:    %{name}-%{version}.tar.gz
 Source100:  recode.yaml
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
