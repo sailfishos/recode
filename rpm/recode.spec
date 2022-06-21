@@ -11,7 +11,6 @@ Name:       recode
 Summary:    Conversion between character sets and surfaces
 Version:    3.6
 Release:    1
-Group:      Applications/File
 License:    GPLv2+
 URL:        https://github.com/sailfishos/recode
 Source0:    %{name}-%{version}.tar.gz
@@ -30,7 +29,6 @@ are supported.
 
 %package devel
 Summary:    Header files and static libraries for development using recode
-Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 
 %description devel
