@@ -11,10 +11,9 @@ Name:       recode
 Summary:    Conversion between character sets and surfaces
 Version:    3.6
 Release:    1
-Group:      Applications/File
 License:    GPLv2+
-URL:        http://recode.progiciels-bpi.ca/
-Source0:    http://recode.progiciels-bpi.ca/archives/%{name}-%{version}.tar.gz
+URL:        https://github.com/sailfishos/recode
+Source0:    %{name}-%{version}.tar.gz
 Source100:  recode.yaml
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
@@ -30,7 +29,6 @@ are supported.
 
 %package devel
 Summary:    Header files and static libraries for development using recode
-Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 
 %description devel
