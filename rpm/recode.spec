@@ -37,10 +37,9 @@ are supported.
 
 %build
 %configure --disable-static
-make %{?jobs:-j%jobs}
+%make_build
 
 %install
-rm -rf %{buildroot}
 %make_install
 %find_lang recode
 
@@ -50,7 +49,8 @@ rm -rf %{buildroot}
 
 %files -f recode.lang
 %defattr(-,root,root,-)
-%doc AUTHORS COPYING* ChangeLog NEWS README THANKS TODO
+%license COPYING*
+%doc AUTHORS ChangeLog NEWS README THANKS TODO
 %doc %{_mandir}/*/*
 %doc %{_infodir}/recode.info*
 %{_bindir}/*
